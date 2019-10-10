@@ -32,8 +32,8 @@
             <input type="button" value="+ Sección" class="column" id="btnOpcion"/>
           </div>
           <div class="row">
-            <input type="button" value="Multiplicar" class="column" id="btnMultiplicar"/>
-            <input type="button" value="Dividir" class="column" id="btnDividir" />
+            <input type="button" value="+Lista" class="column" id="btnLista"/>
+            <input type="button" value="+Tabla" class="column" id="btnTabla" />
           </div>
           <div class="row">
               <input type="button" value="Borrar" class="column" id="btnBorrar"/>
@@ -42,12 +42,28 @@
       </form>
     </div>
     <div class="container">
-      <h2>Listas</h2>
-      <ul>
+      <h2>Lista</h2>
+    <ul id="lista">
         <li>Uno</li>
         <li>Dos</li>
         <li>Tres</li>
       </ul>
+    </div>
+    <div class="container">
+      <h2>Tablas</h2>
+      <table>
+        <thead>
+          <th>Nombre</th>
+        </thead>
+        <tbody id="tabla">
+          <tr>
+            <td>Uno</td>
+          </tr>
+          <tr>
+          <td>Dos</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
   <script src="main.js"></script>
