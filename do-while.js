@@ -30,3 +30,27 @@ btnDos.addEventListener('click', () =>{
 
     } while (i < x)
 })
+
+
+var btnTres = document.querySelector('#btnTres')
+
+btnTres.addEventListener('click', () => {
+    let lista = document.querySelector('#lista')
+    let pares = 0
+
+    do{
+        let num = Number(prompt('Escriba un número:'))
+        
+        if (num < 0){
+            break
+        }
+
+        if(num%2===0){
+            pares++
+
+            let nuevo = document.createElement('li')
+            nuevo.textContent = num
+            lista.appendChild(nuevo)
+        }
+    } while (pares < 5)
+})
